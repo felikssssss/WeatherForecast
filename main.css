@@ -1,0 +1,134 @@
+@import url('./reset.css');
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700);
+
+.header {
+  display: flex;
+  padding: 40px 15px 50px;
+  height: 216px;
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(92.7deg, #4cb8c4 0%, #3cd3ad 100%), 0#232323;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.18;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: white;
+  height: 54px;
+  border-radius: 6px;
+  width: 460px;
+}
+
+.input {
+  line-height: 1;
+  font-family: 'Rubick';
+  width: 243px;
+  font-size: 20px;
+  font-weight: 300;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  flex-grow: 1;
+  padding: 0 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  width: 145px;
+  height: 54px;
+  background: #f03b44;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  transition: background-color 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+  width: 360px;
+  margin: 50px auto 0;
+}
+
+.card::before {
+  content: '';
+  background-color: red;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: calc(100% - 20px);
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+}
+
+.card-town {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.card-town > span {
+  display: inline-block;
+  border-radius: 6px;
+  background: #e5464f;
+  padding: 3px 5px;
+  color: white;
+  font-size: 12px;
+  line-height: 100%;
+  vertical-align: top;
+}
+
+.card-response {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-temperature {
+  display: flex;
+  justify-content: space-between;
+  font-size: 52px;
+}
+
+.card-temperature sup {
+  top: 10px;
+  font-size: 42px;
+  font-weight: 500;
+}
+.card-img {
+  width: 100px;
+  height: 100px;
+}
+
+.card-descr {
+  font-size: 20px;
+}
